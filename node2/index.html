@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app1">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ng-controller="demo1Controller">
+    <h1>数字计算</h1>
+    请输入一个数字：<input type="text" ng-model="num" />
+    <button ng-click="square()">数的平方</button>
+    <p ng-bind="result"></p>
+</div>
+
+<script src="JS/angular.js"></script>
+<script src="JS/demo1.js"></script>
+</body>
+</html>

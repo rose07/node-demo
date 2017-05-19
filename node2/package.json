@@ -1,0 +1,19 @@
+{
+  "name": "nodetwo",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[D“\u001b[\u001b[C\u001b \"\"\u001b[D这个是一个node��\"",
+  "main": "node.js",
+  "dependencies": {
+    "node": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mark test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rose07"
+  },
+  "author": "",
+  "license": "ISC"
+}
