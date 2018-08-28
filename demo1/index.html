@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>红包</title>
+</head>
+<!-- <link rel="stylesheet/less" type="text/css" href="style.less" /> -->
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+</style>
+<!-- <script src="bower_components/less/dist/less.js"></script> -->
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+<body>
+    <div class="content">
+        <div class="prize"></div>
+        <div class="content-in">
+            <div class="light">
+                <!-- 灯 -->
+                <div class="light2"></div>
+            </div>
+            <!-- 圆盘 -->
+            <div class="block">
+                <div class="text">
+                    <div class="common text1">
+                        <p class="p1">88</p>
+                        <img src="img/11.png" class="img1">
+                    </div>
+                    <div class="common text2">
+                        <p class="p1">谢谢参与</p>
+                        <img src="img/12.png" class="img1">
+                    </div>
+                    <div class="common text3">
+                        <p class="p1">188</p>
+                        <img src="img/11.png" class="img1">
+                    </div>
+                    <div class="common text4">
+                        <p class="p1">幸运福袋</p>
+                        <img src="img/11.png" class="img1">
+                    </div>
+                    <div class="common text5">
+                        <p class="p1"> 888</p>
+                        <img src="img/11.png" class="img1">
+                    </div>
+                    <div class="common text6">
+                        <p class="p1">8</p>
+                        <img src="img/11.png" class="img1">
+                    </div>
+                </div>
+                <div class="middle-out">
+                    <div class="middle"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.middle').click(function(e){
+            var middleDeg=Math.floor(Math.random()*3600+1);
+            if($(e.target).hasClass('meiddleAnmation')){
+                e.preventDefault();
+            }else{
+                $('.middle').addClass("meiddleAnmation");
+                  $('.meiddleAnmation').css('transform','rotate('+middleDeg+'deg)');
+            }
+
+            setTimeout(function(){
+                    $('.middle').removeClass("meiddleAnmation");
+                    $('.meiddleAnmation').css('transform','rotate('+0+'deg)');
+            },1000)
+        })
+    
+    </script>
+</body>
+
+</html>

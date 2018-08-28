@@ -6,13 +6,10 @@ const superagent = require('superagent');
 var url = 'http://192.168.10.133:8080/ktl/help.jsp';
 
 superagent.get(url).end(function (err, res) {
-    // 抛错拦截
      if(err){
          console.log  (err);
      }
-    // 等待 code
     let $ = cheerio.load(res.text);
-    
 		//获取表格所有的数据
 		var result = [];
 		$('table').get().map(function(item,index){ 		

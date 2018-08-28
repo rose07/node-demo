@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #63a0ab;
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    background: url(img/4.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.content .prize {
+    width: 60px;
+    height: 55px;
+    background: url(img/8.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 21%;
+    left: 8%;
+}
+
+.content .content-in {
+    top: 24%;
+    left: 21%;
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background: url(img/6.png) no-repeat;
+    background-size: 100%;
+    /*transform: rotate3d(0, 0, 1, 360deg);  /*css3*/
+    */
+}
+
+.content .content-in .light {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    background: url(img/5.png) no-repeat;
+    background-size: 100%;
+    animation: blinc 0.5s linear 0.5s infinite normal;
+}
+
+.content .content-in .light2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: url(img/5.png) no-repeat;
+    background-size: 100%;
+    animation: blinc 0.5s linear 0.5s infinite normal;
+}
+
+.content .content-in .block {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    background: url(img/9.png) no-repeat;
+    background-size: 100%;
+    /* animation: guideHand 3.0s linear infinite;*/
+}
+
+.content .content-in .light .block .text {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+
+
+/*中间指针*/
+
+.middle {
+    width: 90px;
+    height: 91px;
+    position: absolute;
+    top: 31%;
+    left: 33%;
+    background: url(img/10.png) no-repeat;
+    background-size: 95% 100%;
+   /* animation: meiddle 1.0s linear infinite ;
+    animation-iteration-count:0;*/
+}
+
+
+
+
+
+
+
+/*text 里面内容样式*/
+
+.text .common {
+    width: 64px;
+    height: 76px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.text .text1 {
+    top: 21%;
+    left: 11%;
+    transform: rotate(-86deg) skewY(30deg);
+}
+
+.text .text2 {
+    top: 9%;
+    left: 39%;
+    transform: rotate(-27deg) skewY(30deg);
+}
+
+.text .text3 {
+    top: 21%;
+    left: 64%;
+    transform: rotate(55deg) skewY(30deg);
+}
+
+.text .text4 {
+    top: 53%;
+    left: 12%;
+    transform: rotate(-141deg) skewY(30deg);
+}
+
+.text .text5 {
+    top: 67%;
+    left: 40%;
+    transform: rotate(168deg) skewY(30deg);
+}
+
+.text .text6 {
+    top: 50%;
+    left: 66%;
+    transform: rotate(111deg) skewY(30deg);
+}
+
+.p1 {
+    text-align: center;
+}
+
+.img1 {
+    width: 58px;
+    height: 44px;
+}
+
+@keyframes blinc {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
+
+
+/*圆盘*/
+
+@keyframes guideHand {
+    
+    0% {
+        transform: rotate(500deg);
+    }
+    
+    100% {
+        transform: rotate(1000deg);
+    }
+}
+
+@keyframes meiddle {
+    0% {
+        transform: rotate(-300deg);
+    }
+    100% {
+        transform: rotate(800deg);
+    }
+}
+
+
+
+
+.blockAnmation {
+     animation: guideHand 1.0s linear infinite ;
+     animation-iteration-count:1;
+}
+/*指针动画*/
+.meiddleAnmation {
+    animation: meiddle 1.0s linear infinite ;
+    animation-iteration-count:1;
+}
